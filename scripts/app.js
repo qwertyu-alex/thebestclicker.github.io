@@ -1,4 +1,47 @@
 $(document).ready(function() {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      let height = $(document).height()
+      let width = $(document).width()
+      let picWidth = Math.floor(width/2)
+      let picHeight = Math.floor(picWidth * 1.6)
+      let marginLeft = Math.floor((width - picWidth)/2);
+      $("<img src='pics/dan.jpg' id='mobile'></div>").insertAfter("#after")
+      $("#mobile").width(picWidth)
+      $("#mobile").height(picHeight)
+      //alert(picHeight)
+      let marginTop = Math.floor((height - picHeight)/2)
+
+      $("#mobile").css('margin-left', marginLeft + "px");
+      $("#mobile").css('margin-top', marginTop + "px");
+
+      function animate() {
+          $('body').animate({backgroundColor:'#7ec0ee'}, 500, function(){
+              $('body').animate({backgroundColor:'#ee7ec0'}, 500, function(){
+                  $('body').animate({backgroundColor:'#c0ee7e'}, 500, function(){
+                    console.log("animate");
+                      animate();
+                  });
+              });
+          });
+      }
+
+      function bass() {
+        $("#mobile").animate({width: width + "px", marginLeft: marginLeft - width/4}, 565, function () {
+          $("#mobile").animate({width: picWidth + "px", marginLeft: marginLeft}, 565, function () {
+            bass();
+          })
+        })
+      };
+
+
+      animate();
+      bass()
+
+
+  } else {
+
+
+
   let body = document.body;
   let html = document.documentElement;
   let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
@@ -56,4 +99,5 @@ $(document).ready(function() {
 
 
   //$("*").css('background-color', "red");
+} // end of else statement
 });
