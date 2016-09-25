@@ -1,6 +1,6 @@
 $(document).ready(function() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      let height = $(document).height()
+      /*let height = $(document).height()
       let width = $(document).width()
       let picWidth = Math.floor(width/2)
       let picHeight = Math.floor(picWidth * 1.6)
@@ -36,8 +36,8 @@ $(document).ready(function() {
 
       animate();
       bass()
-
-
+      */
+      alert("test")
   } else {
 
 
@@ -101,3 +101,6 @@ $(document).ready(function() {
   //$("*").css('background-color', "red");
 } // end of else statement
 });
+
+
+//setInterval
