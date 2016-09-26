@@ -1,6 +1,7 @@
 $(document).ready(function() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       alert("mobile")
+      /*
       var height = $(document).height()
       var width = $(document).width()
       var picWidth = Math.floor(width/2)
@@ -37,10 +38,8 @@ $(document).ready(function() {
 
       animate();
       bass()
-
+*/
   } else {
-
-
 
   let body = document.body;
   let html = document.documentElement;
