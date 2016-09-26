@@ -38,7 +38,25 @@ $(document).ready(function() {
       animate();
       bass()
 
+      //audio
+      var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', 'repost.mp3');
+      audioElement.setAttribute('autoplay', 'autoplay');
+      //audioElement.load()
+      $.get();
+      audioElement.pause();
+      $('*').click(function() {
+          audioElement.play();
+      });
+
   } else {
+
+  var audioElement = document.createElement('audio');
+  audioElement.setAttribute('src', 'repost.mp3');
+  audioElement.setAttribute('autoplay', 'autoplay');
+  //audioElement.load()
+  $.get();
+  audioElement.play();
 
   var body = document.body;
   var html = document.documentElement;
