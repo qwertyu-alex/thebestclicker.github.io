@@ -40,12 +40,12 @@ $(document).ready(function() {
 
   } else {
 
-  let body = document.body;
-  let html = document.documentElement;
-  let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-  let width = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
-  let ratio = width/10;
-  let heightRatio = (ratio*(400/300));
+  var body = document.body;
+  var html = document.documentElement;
+  var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+  var width = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+  var ratio = width/10;
+  var heightRatio = (ratio*(400/300));
 
   function scalableDan() {
 
@@ -62,8 +62,8 @@ $(document).ready(function() {
 
 
   function amountDan() {
-    let divDan = "<div class='dan'></div>"
-    let divCon = "<div id="+ i +">"+ divDan + divDan + divDan + divDan + divDan + divDan + divDan + divDan + divDan + divDan +"</div>"
+    var divDan = "<div class='dan'></div>"
+    var divCon = "<div id="+ i +">"+ divDan + divDan + divDan + divDan + divDan + divDan + divDan + divDan + divDan + divDan +"</div>"
     for (var i = 0; i < (height/heightRatio ); i++) {
       $(divCon).insertAfter("#after")
     }
