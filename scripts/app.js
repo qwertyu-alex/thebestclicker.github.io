@@ -1,15 +1,15 @@
 $(document).ready(function() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      /*let height = $(document).height()
-      let width = $(document).width()
-      let picWidth = Math.floor(width/2)
-      let picHeight = Math.floor(picWidth * 1.6)
-      let marginLeft = Math.floor((width - picWidth)/2);
+      var height = $(document).height()
+      var width = $(document).width()
+      var picWidth = Math.floor(width/2)
+      var picHeight = Math.floor(picWidth * 1.6)
+      var marginLeft = Math.floor((width - picWidth)/2);
       $("<img src='pics/dan.jpg' id='mobile'></div>").insertAfter("#after")
       $("#mobile").width(picWidth)
       $("#mobile").height(picHeight)
       //alert(picHeight)
-      let marginTop = Math.floor((height - picHeight)/2)
+      var marginTop = Math.floor((height - picHeight)/2)
 
       $("#mobile").css('margin-left', marginLeft + "px");
       $("#mobile").css('margin-top', marginTop + "px");
@@ -36,8 +36,7 @@ $(document).ready(function() {
 
       animate();
       bass()
-      */
-      alert("test")
+
   } else {
 
 
